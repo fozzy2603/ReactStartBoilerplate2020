@@ -1,0 +1,14 @@
+.not-found{
+  padding-top: 5%;
+  text-align: center;
+  &__text{
+    font-size: 1.5rem;
+    &--uppercase{
+      text-transform: uppercase;
+    }
+  }
+  &__title{
+    font-size: 8rem;
+    line-height: 1.2;
+  }
+}

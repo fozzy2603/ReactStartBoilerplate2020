@@ -1,0 +1,153 @@
+@mixin clearfix() {
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin last-child(){
+  &:last-child{
+    margin-bottom: 0 !important;
+  }
+}
+//
+//
+//@mixin button($color, $background, $border) {
+//  color: $color;
+//  background-color: $background;
+//  border-color: $border;
+//  &:active,
+//  &:hover{
+//    color: $color;
+//    background-color: darken($background, 10%);
+//    border-color: darken($border, 12%);
+//  }
+//  &:active{
+//    background-color: darken($background, 10%);
+//    border-color: darken($border, 12%);
+//    &:hover{
+//      color: $color;
+//      background-color: darken($background, 17%);
+//      border-color: darken($border, 25%);
+//    }
+//  }
+//  &[disabled],
+//  &.disabled {
+//    &:hover{
+//      background-color: $background;
+//      border-color: $border;
+//    }
+//  }
+//}
+//
+//
+//@mixin background-gradient($startColor, $endColor, $orientation:'') {
+//  background: $startColor;
+//  @if $orientation == 'vertical' {
+//    background: -webkit-linear-gradient(top, $startColor, $endColor);
+//    background: linear-gradient(to bottom, $startColor, $endColor);
+//    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#{$startColor}', endColorstr='#{$endColor}',GradientType=0 );
+//  } @else if $orientation == 'horizontal' {
+//    background: -webkit-linear-gradient(left, $startColor, $endColor);
+//    background: linear-gradient(to right, $startColor, $endColor);
+//    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#{$startColor}', endColorstr='#{$endColor}',GradientType=1 );
+//  } @else {
+//    background: -webkit-radial-gradient(center, ellipse cover, $startColor, $endColor);
+//    background: radial-gradient(ellipse at center, $startColor, $endColor);
+//    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100, finishopacity=60, style=2);
+//  }
+//}
+//
+//
+//@mixin aspect-ratio($width, $height) {
+//  position: relative;
+//  &:before {
+//    display: block;
+//    content: "";
+//    width: 100%;
+//    padding-top: ($height / $width) * 100%;
+//  }
+//  > .inner-content {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+//  }
+//}
+//
+//
+//@mixin triangle($direction, $size: 1em, $color: currentColor) {
+//  content: '';
+//  height: 0;
+//  width: 0;
+//  border-color: transparent;
+//  border-style: solid;
+//  border-width: $size / 2;
+//  display: inline-block;
+//  @if $direction == up {
+//    border-bottom-color: $color;
+//
+//  } @else if $direction == right {
+//    border-left-color: $color;
+//
+//  } @else if $direction == down {
+//    border-top-color: $color;
+//
+//  } @else if $direction == left {
+//    border-right-color: $color;
+//  }
+//}
+//
+//
+//@mixin vertical-align(){
+//  &:before {
+//    content: '';
+//    display: inline-block;
+//    vertical-align: middle;
+//    height: 100%;
+//    width: .1px;
+//  }
+//  > .centered{
+//    display: inline-block;
+//    vertical-align: middle;
+//    width: 99.5%;
+//  }
+//}
+//
+//
+//@mixin truncateText($overflow: ellipsis){
+//  overflow: hidden;
+//  white-space: nowrap;
+//  text-overflow: $overflow;
+//}
+//
+//@mixin respond-to($media) {
+//  @if $media == phone {
+//    @media all and (max-width: $screen-phone) {
+//      @content;
+//    }
+//  }
+//  @else if $media == tablet {
+//    @media all and (max-width: $screen-tablet - 1) {
+//      @content;
+//    }
+//  }
+//  @else if $media == desktop {
+//    @media all and (max-width: $screen-desktop - 1) {
+//      @content;
+//    }
+//  }
+//  @else if $media == lg-desktop {
+//    @media all and (max-width: $screen-lg-desktop - 1) {
+//      @content;
+//    }
+//  }
+//  @else if $media == $media {
+//    @media all and (max-width: $media) {
+//      @content;
+//    }
+//  }
+//}

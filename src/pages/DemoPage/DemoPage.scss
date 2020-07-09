@@ -1,0 +1,43 @@
+.content{
+  &-box{
+    margin-bottom: 24px;
+  }
+  ul, ol{
+    padding-left: 20px;
+    li{
+      margin-bottom: 3px;
+    }
+    ul, ol{
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+  }
+  ul{
+    list-style: inherit;
+  }
+  ol{
+    counter-reset:Item;
+    ol{
+      padding-left: 20px;
+      li{
+        margin: 0;
+      }
+    }
+    li{
+      margin-left: -20px;
+      &:before {
+        content: counter(Item) "). ";
+        counter-increment: Item;
+        font-weight: 600;
+      }
+    }
+  }
+  mark,
+  .mark {
+    padding: .2em;
+  }
+  blockquote{
+    padding: 15px 20px;
+    background: #f9f9f9;
+  }
+}

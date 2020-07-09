@@ -1,0 +1,9 @@
+@import "default/variables";
+@import "default/mixins";
+@import "~reset-css/sass/reset";
+@import "default/reboot";
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
